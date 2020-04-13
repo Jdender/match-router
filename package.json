@@ -1,0 +1,21 @@
+{
+  "name": "match-router",
+  "version": "1.0.0",
+  "description": "A simple JavaScript router that let's you declaritvly go to and render routes in your html alone",
+  "keywords": [],
+  "author": "Jdender~ <jdenderplays@gmail.com> (https://github.com/Jdender)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jdender/match-router.git"
+  },
+  "bugs": "https://github.com/Jdender/match-router/issues",
+  "homepage": "https://github.com/Jdender/match-router#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
