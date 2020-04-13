@@ -1,13 +1,16 @@
 # match-router
-A simple JavaScript router that let's you declaratively handle route-based rendering in your html alone
+
+> Simple JavaScript router that let's you declaratively handle route-based rendering in your html alone.
 
 ## Reasoning
+
 Sometimes you just want to have a few pages but only need one html file.
 Well that's the exact use case this was designed for.
 This library is really only useful for examples or really, really small web projects.
-Please do not use this in production (or if you do please send me the site so I can see how much destruction it's caused)
+Please do not use this in production (or if you do please send me the site so I can see how much destruction it's caused).
 
 ## Getting Started
+
 Just add this script tag to your head element:
 ```html
 <head>
@@ -15,9 +18,10 @@ Just add this script tag to your head element:
     <script defer src="TODO"></script>
 </head>
 ```
-Make sure you add the `defer` attribute or you could also put the script at the end of the body instead.
+Make sure you either add the `defer` attribute or you could also put the script at the end of the body instead of the head tag.
 
 ## Usage
+
 Simply create a parent element with `id="route-matcher"` then just add your routes as a `data-route` attribute onto your child elements.
 Any element who's route doesn't match the current one will be set to `display: hidden`.
 ```html
@@ -34,3 +38,31 @@ Any element who's route doesn't match the current one will be set to `display: h
     <div data-route="about ">Who's idea was this?</div>
 </div>
 ```
+## Running the tests
+
+Check the [examples](https://github.com/Jdender/match-router/tree/master/examples) and see if they run correctly.
+It's a bit primitive but, let's be honest, we don't need to extensively test a library this small.
+
+## Built With
+
+* [JavaScript Stdlib](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Just Plain Ol' JS
+* [TypeScript](https://www.typescriptlang.org/) - Strongly Typed Superset of JavaScript
+* [Yarn v1](https://classic.yarnpkg.com/lang/en/) - Package Management
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Jdender/match-router/tags).
+
+## Authors
+
+* **Jdender~** - *Creator* - [Jdender](https://github.com/Jdender)
+
+See also the list of [contributors](https://github.com/Jdender/match-router/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Thanks to [PurpleBooth](https://github.com/PurpleBooth) for their [README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
