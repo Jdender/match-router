@@ -15,10 +15,9 @@ Just add this script tag to your head element:
 ```html
 <head>
     ...
-    <script defer src="TODO"></script>
+    <script src="TODO"></script>
 </head>
 ```
-Make sure you either add the `defer` attribute or you could also put the script at the end of the body instead of the head tag.
 
 ## Usage
 
@@ -43,9 +42,12 @@ Any element who's route doesn't match the current one will be set to `display: h
 Check the [examples](https://github.com/Jdender/match-router/tree/master/examples) and see if they run correctly.
 It's a bit primitive but, let's be honest, we don't need to extensively test a library this small.
 
-## Built With
+## Dependencies
 
-* [JavaScript Stdlib](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Just Plain Ol' JS
+All this needs to run is plan old ES5 JavaScript.
+
+### Development Only
+
 * [TypeScript](https://www.typescriptlang.org/) - Strongly Typed Superset of JavaScript
 * [Yarn v1](https://classic.yarnpkg.com/lang/en/) - Package Management
 
