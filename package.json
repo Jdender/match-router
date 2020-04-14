@@ -1,5 +1,5 @@
 {
-  "name": "match-router",
+  "name": "quick-router",
   "version": "1.0.0",
   "description": "A simple JavaScript router that let's you declaritvly go to and render routes in your html alone",
   "keywords": [],
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jdender/match-router.git"
+    "url": "git+https://github.com/Jdender/quick-router.git"
   },
-  "bugs": "https://github.com/Jdender/match-router/issues",
-  "homepage": "https://github.com/Jdender/match-router#readme",
+  "bugs": "https://github.com/Jdender/quick-router/issues",
+  "homepage": "https://github.com/Jdender/quick-router#readme",
   "devDependencies": {
     "http-server": "^0.12.1",
     "typescript": "^3.8.3"

@@ -1,4 +1,4 @@
-# match-router
+# quick-router
 
 > Simple JavaScript router that let's you declaratively handle route-based rendering in your html alone.
 
@@ -39,7 +39,7 @@ Any element who's route doesn't match the current one will be set to `display: h
 ```
 ## Running the tests
 
-Check the [examples](https://github.com/Jdender/match-router/tree/master/examples) and see if they run correctly.
+Check the [examples](https://github.com/Jdender/quick-router/tree/master/examples) and see if they run correctly.
 It's a bit primitive but, let's be honest, we don't need to extensively test a library this small.
 
 ## Dependencies
@@ -53,13 +53,13 @@ All this needs to run is plan old ES5 JavaScript.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Jdender/match-router/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Jdender/quick-router/tags).
 
 ## Authors
 
 * **Jdender~** - *Creator* - [Jdender](https://github.com/Jdender)
 
-See also the list of [contributors](https://github.com/Jdender/match-router/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Jdender/quick-router/contributors) who participated in this project.
 
 ## License
 
