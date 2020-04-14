@@ -5,9 +5,12 @@
   "keywords": [],
   "author": "Jdender~ <jdenderplays@gmail.com> (https://github.com/Jdender)",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "pretest": "tsc",
+    "prepublish": "tsc",
+    "test": "http-server ./"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,7 @@
   "bugs": "https://github.com/Jdender/match-router/issues",
   "homepage": "https://github.com/Jdender/match-router#readme",
   "devDependencies": {
+    "http-server": "^0.12.1",
     "typescript": "^3.8.3"
   }
 }

@@ -4,6 +4,7 @@
     "module": "none",
     "outDir": "dist",
     "strict": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true
   }
 }
