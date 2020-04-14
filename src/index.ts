@@ -4,27 +4,32 @@
         el: HTMLElement;
     }
 
-    // Regex to remove leading #s
-    const hashRegex = /#?(.*)/;
-
-    // Cached routes
-    const routes: Route[] = [];
+    const hashRegex = /#?(.*)/; // Regex to remove leading #s
+    const routes: Route[] = []; // Cached routes from init
+    let hasInitYet = false; // What it says on the tin
 
     // Handle the current route on inital load and on any hash change
     const handle = () => {
+        // Just in case
+        if (!hasInitYet) init();
+
         // Get the current route from hash and regex
-        const current = hashRegex.exec(location.hash)?.[1] ?? '';
+        const current = decodeURIComponent(hashRegex.exec(location.hash)?.[1] ?? '').trim();
 
         for (const { route, el } of routes) {
 
             // If the route matches then good, else hide it
             if (route === current) el.style.display = '';
-            else el.style.display = 'hidden';
+            else el.style.display = 'none';
         }
     };
 
     // Runs on inital load
     const init = () => {
+        // Avoid double initing
+        if (hasInitYet) return;
+        hasInitYet = true;
+
         // Find the route matcher
         const matcher = document.getElementById('route-matcher');
         if (!matcher) return;
@@ -42,9 +47,15 @@
             // Add to the list of routes
             routes.push({ route, el });
         }
+
+        // Call handle after init
+        handle();
     };
 
     // Lastly, add the event listeners
     addEventListener('hashchange', handle);
     addEventListener('DOMContentLoaded', init);
+
+    // If the event is already fired before the script loaded
+    if (document.readyState === 'interactive' || document.readyState === 'complete') init();
 })();
