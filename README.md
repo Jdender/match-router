@@ -50,6 +50,7 @@ All this needs to run is plan old ES5 JavaScript.
 
 * [TypeScript](https://www.typescriptlang.org/) - Strongly Typed Superset of JavaScript
 * [Yarn v1](https://classic.yarnpkg.com/lang/en/) - Package Management
+* [http-server](https://github.com/http-party/http-server) - Local example testing
 
 ## Versioning
 
